@@ -1,7 +1,10 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
+<<<<<<< HEAD
 	staticruntime "on"
+=======
+>>>>>>> 6d5773a70a49399b2dcd0a7793d14c18fb03b4ff
 
 	targetdir ("bit/" .. outputdir .. "/%{prj.name}")
 	objdir ("bit-int/" .. outputdir .. "/%{prj.name}")
@@ -21,6 +24,10 @@ project "GLFW"
 
 	filter "system:windows"
 		systemversion "latest"
+<<<<<<< HEAD
+=======
+		staticruntime "On"
+>>>>>>> 6d5773a70a49399b2dcd0a7793d14c18fb03b4ff
 
 		files
 		{
@@ -41,6 +48,7 @@ project "GLFW"
 			"_CRT_SECURE_NO_WARNINGS"
 		}
 
+<<<<<<< HEAD
 		filter "configurations:Debug" 
 			runtime "Debug"
 			symbols "on"
@@ -48,3 +56,12 @@ project "GLFW"
 		filter "configurations:Release" 
 			runtime "Release"
 			optimize "on"
+=======
+		filter "configuration:Debug" 
+			runtime "Debug"
+			symbols "on"
+
+		filter "configuration:Release" 
+			runtime "Release"
+			optimize "on"
+>>>>>>> 6d5773a70a49399b2dcd0a7793d14c18fb03b4ff
